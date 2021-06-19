@@ -13,7 +13,7 @@ $(function() {
     //从layui 中获取 form 对象
     var form = layui.form;
     var layer = layui.layer;
-    // 通过form.verify()
+    // 通过form.verify() 函数来校验正则
     form.verify({
         pass: [
             /^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'
