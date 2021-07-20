@@ -4,7 +4,6 @@
 $.ajaxPrefilter(function(options) {
     //在发起真正的Ajax请求之前，统一凭借请求的根路径
     options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
-    console.log(options.url);
 
     // 统一为有权限的接口设置headers请求头
     //查找url里面有没有/my/的字符   indexOf!=-1就是有权限的接口
